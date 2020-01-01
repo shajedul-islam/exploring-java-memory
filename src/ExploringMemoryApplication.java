@@ -15,6 +15,12 @@ public class ExploringMemoryApplication {
         // pass by reference not possible
         System.out.println("local value: " + localValue); // prints 5
 
+        Customer customer1 = new Customer();
+        customer1.setName("John");
+        renameCustomer(customer1);
+        System.out.println("customer name: " + customer1.getName());
+
+
     }
 
 
