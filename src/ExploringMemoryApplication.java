@@ -20,7 +20,10 @@ public class ExploringMemoryApplication {
         renameCustomer(customer1);
         System.out.println("customer name: " + customer1.getName());
 
-
+        final Customer finalCustomer = new Customer();
+        finalCustomer.setName("Final Customer");
+        renameCustomer(finalCustomer);
+        System.out.println("Final customer name: " + finalCustomer.getName());
     }
 
 
